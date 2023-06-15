@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheelhouse Bikes</title>
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style_bike.css">
+    <link rel="stylesheet" href="/static/css/section.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg   fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/static/img/logo1.jpg" class="img-fluid" alt=""></a>
+            <button class="navbar-toggler" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Wheelhouse Bikes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('solution')}}">Our Solution</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Testimonial</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section style="background-image: url('/static/img/contact_ss.png');" id="home" class="bg-cover hero-section">
+        <div class="overlay-about">
+        </div>
+        <div class="container text-white text-center">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h2><span style="font-family: Great Vibes;">Contact Us</span></h2>
+                    <!--Margin top and bottom-->
+                    <p class="my-4">Reach Us
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+    
+{% block content %}
+    <section id="countactPage">
+        <div class="container mb-5">
+            <div class="row justify-content-left">
+                <div class="col-md-5 justify-content-center">
+                    <div class="card card-1 text-center mb-3 aos-init" data-aos="flip-left" data-aos-duration="1400">
+                        <div class="card-body justify-content-center">
+                            <div class="row">
+
+                                <div class="col-md-8">
+                                    <p>Get In Touch With Us</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-10 justify-content-center">
+                                    <form action="{{url_for('thank_you')}}">
+                                        <div class="input-container">
+                                            <input type="text" id="fullname" name="fullname" autocomplete="off"
+                                                placeholder="Enter name" required class="text-input">
+                                            <label for="fullname" class="label">Fullname</label>
+                                        </div>
+
+                                        <div class="input-container">
+                                            <input type="email" id="email" name="email" autocomplete="off"
+                                                placeholder="enter your name" required class="text-input">
+                                            <label for="email" class="label">Email</label>
+                                        </div>
+                                        <div class="input-container">
+                                            <input type="text" id="number" autocomplete="off"
+                                                placeholder="enter your contact number" required class="text-input">
+                                            <label for="phone" class="label">Contact Number</label>
+                                        </div>
+                                        <div class="input-container">
+                                            <textarea name="Message" id="" cols="40" rows="5" autocomplete="off"
+                                                placeholder="message" required class="text-input"></textarea>
+                                            <label for="email" class="label">Message</label>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col m-auto p-auto">
+                                                <input type="submit" action="submit" class="btn btn-main"></button>
+                                                
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                            
+                            <div class="row text-center">
+                                <div class="col-md-12">
+                                    <span style="color:#283826">For More Query Contact Us</span> <a
+                                        style="text-decoration: none;" href="#"
+                                        target="_blank">www.wheelhousebikes.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 m-auto">
+                    <div class="row">
+
+                        <div class="col-md-7 offset-md-5">
+                            <div class="card card-about aos-init" data-aos="flip-left" data-aos-duration="1000">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <i class="fa-solid fa-envelope"></i>
+
+                                    </div>
+                                    <div class="col-md-8 m-auto">
+                                        <p><a href="https://www.google.com/gmail/about/">wheelhousebike.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 offset-md-5">
+                            <div class="card card-about aos-init" data-aos="flip-left" data-aos-duration="1200">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <i class="fa-solid fa-phone"></i>
+
+                                    </div>
+                                    <div class="col-md-8 m-auto">
+                                        <p>99XXXXXXXX</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 offset-md-5">
+                            <div class="card card-about aos-init" data-aos="flip-left" data-aos-duration="1400">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <i class="fa-solid fa-house"></i>
+
+                                    </div>
+                                    <div class="col-md-8 m-auto">
+                                        <p>Sector V , Kolkata</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+
+    
+
+
+
+
+
+
+
+    <!--Footer-->
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1000" class="aos-init">
+                    <h3>Wheelhouse Bike</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                        doloribus animi
+                        velit error, ea fugit
+                        repudiandae molestiae quam impedit sunt!</p>
+                    <div class="share">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1000" class="aos-init">
+                    <div class="row">
+
+                        <h3>Quick Links</h3>
+                        <div class="row ql">
+                            <div class="col-md-10 m-auto">
+                                <a href="index.html" class="link">home</a>
+                            </div>
+                            <div class="col-md-10 m-auto">
+                                <a href="about.html" class="link">about</a>
+                            </div>
+
+                            <div class="col-md-10 m-auto">
+                                <a href="contact.html" class="link">contact</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1000" class="aos-init">
+                    <h3>Useful Links</h3>
+                    <div class="row ul">
+                        <div class="col-md-10 m-md-auto">
+                            <a href="" class="link">help center</a>
+                        </div>
+                        <div class="col-md-10 m-md-auto">
+                            <a href="" class="link">ask question</a>
+                        </div>
+                        <div class="col-md-10 m-md-auto">
+                            <a href="" class="link">send feedback</a>
+                        </div>
+                        <div class="col-md-10 m-md-auto">
+                            <a href="" class="link">private policy</a>
+                        </div>
+                        <div class="col-md-10 m-md-auto">
+
+                            <a href="" class="link">term of use</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1000" class="aos-init">
+                    <h3>newsletter</h3>
+                    <p>subscribefor the latest updates</p>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <input style="padding: 0.5rem 0.5rem;border: 1px solid purple;border-radius: 5px;"
+                                    type="email" name="" placeholder="enter your email" id="" class="email">
+
+                            </div>
+
+                            <div class="col-lg-12 col-md-12">
+                                <input type="submit" value="subscribe" class="btn">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12">
+                    <div class="credit">
+                        Created By <span>Group6</span> | all rights reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/static/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+    <script>
+        AOS.init();
+    </script>
+        </body>
+        </html>

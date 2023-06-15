@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wheelhouse Bikes</title>
+
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/style_bike.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg   fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{url_for('index')}}"><img src="/static/img/logo1.jpg" class="img-fluid" alt=""></a>
+      <button class="navbar-toggler" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas"
+        aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Wheelhouse Bikes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('solution')}}">Our Solution</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Admin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonial</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <section>
+    <div class="slide">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner" id="bootatrap-slider">
+          <div class="carousel-item active">
+            <img src="/static/img/bike1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 data-aos="fade-up" data-aos-duration="1000"><span>Wheelhouse Bikes</span></h2>
+              <p>Get your two wheeled freedom</p>
+
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/static/img/bike2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 data-aos="fade-up" data-aos-duration="1500"><span>Wheelhouse Bikes</span></h2>
+              <p>Get your two wheeled freedom</p>
+
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/static/img/bike3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 data-aos="fade-up" data-aos-duration="1500"><span>Wheelhouse Bikes</span></h2>
+              <p>Get your two wheeled freedom</p>
+
+
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="overlap">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-md-3 m-auto">
+          <div class="card h-100">
+            <div class="card-title text-center">
+              <img style="border-radius: 0px;" src="/static/img/bike9.jpg" class="card-img-top" alt="">
+              <p>Get your comfort at minimum price</p>
+              <div class="btn btn-overlap">Get Started</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+  </section><br><br><br>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div data-aos="zoom-in-down" data-aos-duaration="4000" class="col-md-8 m-auto aos-init">
+          <img src="/static/img/bike1.jpg" class="img-fluid" alt="">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="col-md-4 m-auto aos-init">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="/static/img/logo1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-md-12">
+                <h3 style="color: #e41165">Explore More About Us</h3>
+                <p style="color: #e411a8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quis sequi
+                  atque
+                  repellat ad eius
+                  repellendus ab quam nulla consequatur? Deserunt sapiente nemo tempore beatae ad, officia expedita,
+                  reprehenderit repellat atque sunt illo voluptates nesciunt aspernatur iste odio saepe excepturi.</p>
+              </div>
+              <div class="col-md-4">
+                <div class="btn btn-about">Explore</div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><br><br><br>
+  <section id="gallery">
+    <div class="container text-center">
+      <h2 data-aos="fade-up" data-aos-duration="1000">Our Gallery</h2>
+      <div class="header" style="margin-bottom: 50px;"></div>
+      <div class="row justify-content-center">
+        <div class="col-md-12 gallery-contain">
+          <div class="row justify-content-center">
+            <div class="col-md-3 ">
+              <img src="/static/img/bike1.jpg" class=img-fluid alt="">
+            </div>
+            <div class="col-md-3">
+              <img src="/static/img/bike2.jpg" class=img-fluid alt="">
+            </div>
+            <div class="col-md-3 ">
+              <img src="/static/img/bike3.jpg" class=img-fluid alt="">
+            </div>
+            <div class="w-100"></div>
+            <div class="col-md-3 ">
+              <img src="/static/img/bike4.jpg" class=img-fluid alt="">
+            </div>
+            <div class="col-md-3 ">
+              <img src="/static/img/bike8.jpg" class=img-fluid alt="">
+            </div>
+            <div class="col-md-3 ">
+              <img src="/static/img/bike9.jpg" class=img-fluid alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br><br><br>
+  <section id="OurSolution">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 m-auto" data-aos="fade-up" data-aos-duration="1000">
+          <h3>Our Solution</h3>
+          <p>Basically we provide you a software solution which will predict you the efficient price to buy your bike.
+            Itaque, quis sequi atque repellat ad eius
+            repellendus ab quam nulla consequatur? Deserunt sapiente nemo tempore beatae ad, officia expedita,
+            reprehenderit repellat atque sunt illo voluptates nesciunt aspernatur iste odio saepe excepturi.</p>
+          <a style="text-decoration: none;" href="{{url_for('solution')}}">
+            <button active="submit" class="btn btn-about">Check Price</button>
+          </a>
+        </div>
+        <div data-aos="flip-left" data-aos-duaration="1000" class="col-md-4 m-auto aos-init">
+          <img src="/static/img/logo1-new.png" class="img-fluid" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </section><br><br><br>
+  <section id="teams">
+    <div class="container text-center">
+      <h2 data-aos="fade-up" data-aos-duration="1000">Our Teams</h2>
+      <div class="header" style="margin-bottom: 50px;"></div>
+      <div class="row gy-6">
+        <div class="col-lg-3">
+          <div style="background-color: black;" class="card">
+            <div class="inner-box">
+              <div class="card-front1">
+                <span>Saloni Kumari</span>
+              </div>
+              <div class="card-back">
+                <p>Team Lead & <br>Front-End Development</p>
+                <div class="social-media">
+                  <a href="mailto:salonikri225@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                  <a href="https://www.linkedin.com/in/saloni-kumari-1255111bb/"><i
+                      class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 ">
+          <div style="background-color: black;" class="card">
+            <div class="inner-box">
+              <div class="card-front2">
+                <span>Simran Yadav</span>
+              </div>
+              <div class="card-back">
+                <p>Machine Learning</p>
+                <div class="social-media">
+                  <a href="mailto:yadavsimran281198@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                  <a href="https://www.linkedin.com/in/simran-yadav-a6046b220"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 ">
+          <div style="background-color: black;" class="card">
+            <div class="inner-box">
+              <div class="card-front3">
+                <span>Syed Shadab Hussain</span>
+              </div>
+              <div class="card-back">
+                <p>Backend Developer</p>
+                <div class="social-media">
+                  <a href="mailto:sshussain606@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                  <a href="https://www.linkedin.com/in/syed-shadab-hussain-164b05219/"><i
+                      class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3  m-auto">
+          <div style="background-color: black;" class="card">
+            <div class="inner-box">
+              <div class="card-front4">
+                <span>Priyanshu Kumar</span>
+              </div>
+              <div class="card-back">
+                <p>Cloud Deployment</p>
+                <div class="social-media">
+                  <a href="mailto:priyanshukpd@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                  <a href="https://www.linkedin.com/in/priyanshukpd/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><br><br><br>
+
+
+  <section id="testimonial">
+    <div class="container text-center">
+      <div class="row">
+        <div class="reviews-heading">
+          <span data-aos="fade-up" data-aos-duration="1000">COMMENT</span>
+          <h2>Client Says</h2>
+        </div>
+        <div class="wrapper">
+          <div class="testimonial-container" id="testimonial-container"></div>
+          <button id="prev">&lt;</button>
+          <button id="next">&gt;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row contact-row">
+            <div class="col-md-5">
+              <img src="/static/img/contact.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br><br><br>
+  <div class="container mb-5" id="contact-overlap" class="contact-overlap">
+    <div class="row justify-content-left">
+
+      <div class="col-md-5 offset-md-7 justify-content-center">
+        <div class="card card-1 text-center mb-3 aos-init" data-aos="flip-left" data-aos-duration="1400">
+          <div class="card-body justify-content-center">
+            <div class="row">
+
+              <div class="col-md-8">
+                <p>Get In Touch With Us</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10 justify-content-center">
+                <form>
+                  <div class="input-container">
+                    <input type="text" id="fullname" autocomplete="off" placeholder="enter your name" required
+                      class="text-input">
+                    <label for="fullname" class="label">Fullname</label>
+                  </div>
+
+                  <div class="input-container">
+                    <input type="email" id="email" autocomplete="off" placeholder="enter your name" required
+                      class="text-input">
+                    <label for="email" class="label">Email</label>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" id="number" autocomplete="off" placeholder="enter your contact number" required
+                      class="text-input">
+                    <label for="email" class="label">Contact Number</label>
+                  </div>
+                  <div class="input-container">
+                    <textarea name="Message" id="" cols="40" rows="5" autocomplete="off" placeholder="message" required
+                      class="text-input"></textarea>
+                    <label for="email" class="label">Message</label>
+                  </div>
+
+
+                </form>
+
+              </div>
+
+
+            </div>
+            <div class="row ">
+              <div class="col m-auto p-auto">
+                <button action="submit" class="btn btn-main">Call Back</button>
+
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-md-12">
+                <span style="color:#283826">For More Query Contact Us</span> <a style="text-decoration: none;"
+                  href="https://www.larchsoft.com/" target="_blank">www.wheelhousebikes.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!--Footer-->
+
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1000" class="aos-init">
+          <h3>Wheelhouse Bike</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit doloribus animi
+            velit error, ea fugit
+            repudiandae molestiae quam impedit sunt!</p>
+          <div class="share">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1000" class="aos-init">
+          <div class="row">
+
+            <h3>Quick Links</h3>
+            <div class="row ql">
+              <div class="col-md-10 m-auto">
+                <a href="index.html" class="link">home</a>
+              </div>
+              <div class="col-md-10 m-auto">
+                <a href="about.html" class="link">about</a>
+              </div>
+
+              <div class="col-md-10 m-auto">
+                <a href="contact.html" class="link">contact</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+        <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1000" class="aos-init">
+          <h3>Useful Links</h3>
+          <div class="row ul">
+            <div class="col-md-10 m-md-auto">
+              <a href="" class="link">help center</a>
+            </div>
+            <div class="col-md-10 m-md-auto">
+              <a href="" class="link">ask question</a>
+            </div>
+            <div class="col-md-10 m-md-auto">
+              <a href="" class="link">send feedback</a>
+            </div>
+            <div class="col-md-10 m-md-auto">
+              <a href="" class="link">private policy</a>
+            </div>
+            <div class="col-md-10 m-md-auto">
+
+              <a href="" class="link">term of use</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1000" class="aos-init">
+          <h3>newsletter</h3>
+          <p>subscribefor the latest updates</p>
+          <form>
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <input style="padding: 0.5rem 0.5rem;border: 1px solid purple;border-radius: 5px;" type="email" name=""
+                  placeholder="enter your email" id="" class="email">
+
+              </div>
+
+              <div class="col-lg-12 col-md-12">
+                <input type="submit" value="subscribe" class="btn">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-12">
+          <div class="credit">
+            Created By <span>Group6</span> | all rights reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/static/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
