@@ -24,7 +24,7 @@ To get started, you will need to install the following dependencies:
 
 You can install these dependencies using pip:
 
-```
+
 pip install flask numpy scikit-learn pickle matplotlib seaborn scipy datetime LabelEncoder
 ```
 
