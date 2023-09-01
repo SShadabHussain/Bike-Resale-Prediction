@@ -87,113 +87,89 @@
                             <img class="card-img-top" src="assests/img/bike1.jpg" alt="">
                         </div><br><br>
                         <div class="card-body">
-                            <form action="" class="form-group">
-                                <div style="margin-bottom: 1rem;" class="row">
-                                    <div class="col-md-5">
-                                        <label class="form-label">Bike Company</label>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Bike Company</option>
-                                            <option value="Bajaj">Bajaj</option>
-                                            <option value="TVS">TVS</option>
-                                            <option value="Honda">Honda</option>
-                                            <option value="Suzuki">Suzuki</option>
-                                            <option value="Royal Enfield">Royal Enfield</option>
-                                            <option value="KTM">KTM</option>
-                                            <option value="Mahindra">Mahindra</option>
-                                            <option value="Kawasaki">Kawasaki</option>
-                                            <option value="Ducati">Ducati</option>
-                                            <option value="BMW">BMW</option>
-                                            <option value="Banelli">Banelli</option>
-                                            <option value="Harley Davidson">Harley Davidson</option>
-                                            <option value="Lectro Electric">Lectro Electric</option>
-                                            <option value="Li-ion Elektrik Solution">Li-ion Elektrik Solution</option>
-                                            <option value="Ather Energy">Ather Energy</option>
-                                            <option value="Odysse">Odysse</option>
-                                            <option value="Revolt Motors">Revolt Motors</option>
-                                            <option value="CFMoto">CFMoto</option>
-                                            <option value="Triumph">Triumph</option>
-                                            <option value="Jawa">Jawa</option>
-                                            <option value="22Kymco">22Kymco</option>
-                                            <option value="Okinawa">Okinawa</option>
-                                            <option value="Bgauss">Bgauss</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div style="margin-bottom: 1rem;" class="row">
-                                    <div class="col-md-5">
-                                        <label for="text">Bike Model</label>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control" name="newsText"
-                                            placeholder="Bike Model">
-                                        <!-- <button type="submit" style="background-color: purple;border: none;"
-                                            class="btn btn-primary mt-3 mb-3">Check</button> -->
-                                    </div>
-                                </div>
-                                <div style="margin-bottom: 1rem;" class="row">
-                                    <div class="col-md-5">
-                                        <label for="text">Manufacture Year</label>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control" name="newsText"
-                                            placeholder="Manufacture Year">
-                                        <!-- <button type="submit" style="background-color: purple;border: none;"
-                                            class="btn btn-primary mt-3 mb-3">Check</button> -->
-                                    </div>
-                                </div>
-                                <div style="margin-bottom: 1rem;" class="row">
-                                    <div class="col-md-5">
-                                        <label class="form-label">Engine Type</label>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Engine Type</option>
-                                            <option value="Single">Single</option>
-                                            <option value="V-twin">V-twin</option>
-                                            <option value="Boxer">Boxer</option>
-                                            <option value="Two-Stroke">Two-Stroke</option>
-                                            <option value="Dual Stroke">Dual Stroke</option>
-                                            <option value="Oxidiser-Air inlet">Oxidiser-Air inlet</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div style="margin-bottom: 1rem;" class="row">
-                                    <div class="col-md-5">
-                                        <label class="form-label">Fuel Type</label>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Fuel Type</option>
-                                            <option value="Petrol">Petrol</option>
-                                            <option value="Electricity">Electricity</option>
+                            {%block title%}{% endblock %}
+                            {%block content%}
+                            <form action="/predict" method="post">
+                                <div style="margin-bottom: 1rem;" class="form-group">
 
-                                        </select>
-                                    </div>
+                                    <label for="Bike_company" class="form-label">Bike Company</label>
+                                    <select id="Bike_company" name="Bike_company" class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>Bike Company</option>
+                                        <option value="Bajaj">Bajaj</option>
+                                        <option value="TVS">TVS</option>
+                                        <option value="Honda">Honda</option>
+                                        <option value="Suzuki">Suzuki</option>
+                                        <option value="Royal Enfield">Royal Enfield</option>
+                                        <option value="KTM">KTM</option>
+                                        <option value="Mahindra">Mahindra</option>
+                                        <option value="Kawasaki">Kawasaki</option>
+                                        <option value="Ducati">Ducati</option>
+                                        <option value="BMW">BMW</option>
+                                        <option value="Banelli">Banelli</option>
+                                        <option value="Harley Davidson">Harley Davidson</option>
+                                        <option value="Lectro Electric">Lectro Electric</option>
+                                        <option value="Li-ion Elektrik Solution">Li-ion Elektrik Solution</option>
+                                        <option value="Ather Energy">Ather Energy</option>
+                                        <option value="Odysse">Odysse</option>
+                                        <option value="Revolt Motors">Revolt Motors</option>
+                                        <option value="CFMoto">CFMoto</option>
+                                        <option value="Triumph">Triumph</option>
+                                        <option value="Jawa">Jawa</option>
+                                        <option value="22Kymco">22Kymco</option>
+                                        <option value="Okinawa">Okinawa</option>
+                                        <option value="Bgauss">Bgauss</option>
+                                    </select>
+
                                 </div>
-                                <div style="margin-bottom: 1rem;" class="row">
-                                    <div class="col-md-5">
-                                        <label for="text">Cubic Capacity</label>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control" name="newsText"
-                                            placeholder="Cubic Capacity">
-                                        <!-- <button type="submit" style="background-color: purple;border: none;"
-                                            class="btn btn-primary mt-3 mb-3">Check</button> -->
-                                    </div>
+                                <div style="margin-bottom: 1rem;" class="form-group">
+                                    <label for="Bike_Model">Bike Model</label>
+                                    <input id="Bike_Model" type="text" class="form-control" name="Bike_Model"
+                                        placeholder="Bike Model">
                                 </div>
-                                <div style="margin-bottom: 1rem;" class="row">
-                                    <div class="col-md-5">
-                                        <label for="text">Fuel Capacity</label>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control" name="newsText"
-                                            placeholder="Fuel Capacity">
-                                        <button type="submit" class="btn btn-main mt-3 mb-3">Check</button>
-                                    </div>
+                                <div style="margin-bottom: 1rem;" class="form-group">
+
+                                    <label for="Remaining_warranty">Remaining Warranty</label>
+                                    <input id="Remaining_warranty" type="number" class="form-control"
+                                        name="Remaining_warranty" placeholder="Total Remaining Year">
+
+                                </div>
+                                <div style="margin-bottom: 1rem;" class="form-group">
+                                    <label for="Engine_Type" class="form-label">Engine Type</label>
+                                    <select id="Engine_Type" name="Engine_Type" class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>Engine Type</option>
+                                        <option value=0>Single</option>
+                                        <option value=1>V-twin</option>
+                                        <option value=3>Boxer</option>
+                                        <option value=4>Two-Stroke</option>
+                                        <option value=5>Dual Stroke</option>
+                                        <option value=6>Oxidiser-Air inlet</option>
+                                    </select>
+                                </div>
+                                <div style="margin-bottom: 1rem;" class="form-group">
+                                    <label for="Fuel_Type" class="form-label">Fuel Type</label>
+                                    <select id="Fuel_Type" name="Fuel_Type" class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>Fuel Type</option>
+                                        <option value=0>Petrol</option>
+                                        <option value=1>Electricity</option>
+
+                                    </select>
+                                </div>
+                                <div style="margin-bottom: 1rem;" class="form-group">
+                                    <label for="CC">Cubic Capacity</label>
+                                    <input id="CC" type="number" class="form-control" name="CC"
+                                        placeholder="Cubic Capacity">
+                                </div>
+                                <div style="margin-bottom: 1rem;" class="form-group">
+                                    <label for="Fuel_Capacity">Fuel Capacity</label>
+                                    <input id="Fuel_Capacity" type="number" class="form-control" name="Fuel_Capacity"
+                                        placeholder="Fuel Capacity">
+                                    <button type="submit" class="btn btn-main mt-3 mb-3">Check</button>
                                 </div>
                             </form>
+                            {%endblock%}
                         </div>
 
                     </div>
