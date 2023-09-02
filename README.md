@@ -63,4 +63,4 @@ The app is deployed to Heroku. You can find the deployment instructions in the `
 ###Conclusion
 
 This app is a simple example of how machine learning can be used to solve real-world problems. The app is easy to use and can provide valuable information to users who are looking to buy or sell a used bike.
-```
+![Alt text](ScreenShots/Contact.png) ![Alt text](<ScreenShots/Home 1.png>) ![Alt text](<ScreenShots/Home 2.png>) ![Alt text](<ScreenShots/Home 3.png>) ![Alt text](ScreenShots/Solution.png)
