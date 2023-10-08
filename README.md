@@ -1,5 +1,17 @@
 # Bike-Resale-Price-Prediction-App
 Prediction of resale value of bikes from a trained model.
+## Screenshots 
+
+![Home 1](https://github.com/SShadabHussain/Bike-Resale-Prediction/assets/93070562/ee82c682-5b29-45a9-bd00-05afe035fdbf)
+
+![Home 2](https://github.com/SShadabHussain/Bike-Resale-Prediction/assets/93070562/701c4789-8ad1-407a-8a9d-59a3f27c8567)
+
+
+![Solution](https://github.com/SShadabHussain/Bike-Resale-Prediction/assets/93070562/7576f319-4437-4ec7-8a6a-e18b1b82e759)
+
+
+![Contact](https://github.com/SShadabHussain/Bike-Resale-Prediction/assets/93070562/84cbfeb3-c34b-4127-a2e0-03e0148564f3)
+
 
  ```
 
@@ -63,4 +75,3 @@ The app is deployed to Heroku. You can find the deployment instructions in the `
 ###Conclusion
 
 This app is a simple example of how machine learning can be used to solve real-world problems. The app is easy to use and can provide valuable information to users who are looking to buy or sell a used bike.
-![Alt text](ScreenShots/Contact.png) ![Alt text](<ScreenShots/Home 1.png>) ![Alt text](<ScreenShots/Home 2.png>) ![Alt text](ScreenShots/Solution.png)
