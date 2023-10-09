@@ -2,14 +2,16 @@
 Prediction of resale value of bikes from a trained model.
 ## Screenshots 
 
+#### Landing Page
 ![Home 1](https://github.com/SShadabHussain/Bike-Resale-Prediction/assets/93070562/ee82c682-5b29-45a9-bd00-05afe035fdbf)
+<br>
 
 ![Home 2](https://github.com/SShadabHussain/Bike-Resale-Prediction/assets/93070562/701c4789-8ad1-407a-8a9d-59a3f27c8567)
 
-
+#### Solution Page
 ![Solution](https://github.com/SShadabHussain/Bike-Resale-Prediction/assets/93070562/7576f319-4437-4ec7-8a6a-e18b1b82e759)
 
-
+#### About Page
 ![Contact](https://github.com/SShadabHussain/Bike-Resale-Prediction/assets/93070562/84cbfeb3-c34b-4127-a2e0-03e0148564f3)
 
 
